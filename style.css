@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* BODY CSS STARTS FROM HERE--------------------------------------------------------- */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(background.avif);
+}
+/* CARD CSS STARTS FROM HERE---------------------------------------------------------------------- */
+.card {
+    height: 500px;
+    width: 400px;
+    border: 2px solid #888;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px #6ad1e4;
+    transition: 0.9s;
+}
+/* CARD IMAGE CSS START FROM HERE ------------------------------------------------------- */
+.cardimage {
+    height: 300px;
+    width: 100%;
+    box-shadow: inset 0px 0px 20px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+img {
+    height: 90%;
+    width: 92%;
+    border: transparent;
+    /* box-shadow: 0px 0px 10px rgb(244, 237, 22); */
+    border-radius: 4px;
+}
+ 
+
+/* CARD BODY CSS STARTS FROM HERE ------------------------------------------------------------- */
+.cardbody {
+    height: 215px;
+    margin-top: 12px;
+    width: 100%;
+    box-shadow: inset 0px 0px 20px 10px black;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    flex-wrap: wrap;
+}
+
+@media (max-width:215px) {
+    .cardbody{ 
+        height: 270px;
+    }
+    .button {
+        font-size: 3px;
+    }
+}
+
+.cardbody .heading {
+    width: 150px;
+    background-color: whitesmoke;
+    box-shadow: 0px 5px 10px black;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.cardbody .heading h1{
+    color: rgb(35, 35, 44);
+    font-family: fantasy;
+    font-style: italic;
+}
+
+.cardbody .paragraph{
+    margin: 13px 0px;
+    padding: 10px;
+    border: 2px dashed rgb(35, 35, 44);
+    border-radius: 5px;
+    box-shadow:inset 0px 0px 10px black; 
+    
+}
+
+.cardbody .paragraph p{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: fantasy;
+    word-spacing: 3px;
+    line-height: 25px;
+    color: rgb(35, 35, 44);
+    display: flex;
+    justify-content: center;
+}
+
+/* BUTTON CSS STARTS FROM HERE --------------------------------------------------------------------------- */
+.click button{
+    padding: 5px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color:rgb(35, 35, 44);
+    border: transparent;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px black; 
+    transition: 0.5s;
+}
+
+.click button:hover {
+    background-color:lightblue;
+    border:1px solid black;
+
+}
+.click button sub{
+    font-size: 11px;
+    letter-spacing: 0px;
+    color: black;
+}
+
+
